@@ -1,0 +1,55 @@
+.manageEvaluation {
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 5rem;
+}
+
+.manageEvaluation__card {
+  width: 50%;
+  border: solid 1px gray;
+  margin-inline: auto;
+  padding: 4rem 5rem 4rem 3rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+.manageEvaluation__subjectName {
+  color: rgb(72, 72, 192);
+  font-size: 30px;
+}
+
+.manageEvaluation__subjectCode {
+  color: gray;
+  padding-top: 0.5rem;
+}
+
+.question-container {
+  margin-top: 4rem;
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+}
+
+.question-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.question-container__score {
+  font-size: 20px;
+  color: rgb(86, 86, 224);
+  font-weight: bold;
+}
+
+.question-container__noeval {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 13px;
+  color: red
+}
+
+.--big {
+  font-size: 25px;
+}

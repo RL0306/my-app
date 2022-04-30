@@ -1,0 +1,45 @@
+.evaluation {
+  margin-top: 5rem;
+  width: 80%;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 350px);
+  gap: 30px;
+}
+
+.evaluation__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+  padding: 1rem 0.5rem;
+  background-color: #001133;
+  color: white;
+}
+
+.--name {
+  text-align: center;
+  font-size: 20px;
+}
+
+.--subjectName {
+  font-size: 16px;
+}
+
+.--subjectId {
+  color: gray;
+}
+
+.evaluation__card__link {
+  margin-inline: auto;
+  padding: 1rem;
+  background-color: rgb(23, 115, 146);
+  text-decoration: none;
+  color: white
+}
+
+.evaluation__error {
+  color: red;
+  text-align: center;
+  font-size: 13px;
+}

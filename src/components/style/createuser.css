@@ -1,0 +1,56 @@
+.create-card {
+  width: 30%;
+  background-color: lightblue;
+  margin-inline: auto;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.create-card__heading {
+  font-size: 16px;
+  text-align: center;
+  background-color: #001133;
+  width: 100%;
+  color: white;
+  padding: 0.5rem;
+}
+
+.create-card__form {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0rem 0.4rem;
+}
+
+.create-card__input {
+  width: 50%;
+  padding: 0.5rem;
+  border: solid 1px gray;
+}
+
+.create-card__buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.create_card__button {
+  width: 15%;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+}
+
+.create-card__output {
+  font-size: 14px;
+  color: red;
+}
+
+.--confirm {
+  background-color: rgb(84, 84, 228);
+}
+
+.--cancel {
+  background-color: red;
+}

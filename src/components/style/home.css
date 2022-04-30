@@ -1,0 +1,55 @@
+.card {
+  width: 30%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  margin-inline: auto;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #001133;
+  margin-top: 10rem;
+  padding: 2rem;
+}
+
+.card__heading {
+  color: white;
+  text-align: center;
+}
+
+.card__redirect {
+  width: 90%;
+  text-align: center;
+  padding: 0.4rem;
+  background-color: rgb(107, 107, 207);
+
+}
+
+.subject__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 5rem;
+  padding: 0.3rem;
+}
+
+.subject {
+  border: solid 2px red;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 80%;
+  color: white;
+  background-color: #001133;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.link--redirect {
+  color: white;
+  text-decoration: none;
+}
+
+.--subect--btn {
+  border: none;
+}
