@@ -12,6 +12,7 @@ const ManageUser = () => {
     name : "",
     user_type : ""
   });
+  const[output, setOutput] = useState("");
 
   const getAllPeople = async () => {
     const req = await axios.get("http://localhost:8080/api/v1/admin/all", {withCredentials : true});
@@ -25,6 +26,7 @@ const ManageUser = () => {
 
   const handleOpen = (user) => {
     setActive(1);
+    setOutput("");
     
     setEdit({
       id : user.id,
@@ -53,7 +55,12 @@ const ManageUser = () => {
       userType : formData.get("user_type")
     }
     console.log(editData);
-    await axios.patch(`http://localhost:8080/api/v1/student/${edit.id}`, editData, {withCredentials:true});
+    try{
+      await axios.patch(`http://localhost:8080/api/v1/student/${edit.id}`, editData, {withCredentials:true});
+      setOutput("Successfully Edited User!")
+    } catch(error){
+      setOutput("Something went wrong");
+    }
   } 
 
   
@@ -106,7 +113,10 @@ const ManageUser = () => {
               <button type="submit" className="edit__form__btn --save">Save Changes</button>
               <button onClick={handleClose} className="edit__form__btn --close">Close</button>
             </div>
+
+            <p className="evaluation__error">{output}</p>  
           </form>
+
       </section>
       }
 
