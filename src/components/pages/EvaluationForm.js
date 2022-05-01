@@ -32,6 +32,7 @@ const EvaluationForm = () => {
     }
     try{
       await axios.post(`http://localhost:8080/api/v1/evaluation/${id}`, evaluationAnswer, {withCredentials : true});
+      setOutput("Successfully Submitted")
     } catch(error) {
       setOutput("You already have submitted!")
     }
