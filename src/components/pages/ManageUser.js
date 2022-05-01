@@ -58,6 +58,7 @@ const ManageUser = () => {
     try{
       await axios.patch(`http://localhost:8080/api/v1/student/${edit.id}`, editData, {withCredentials:true});
       setOutput("Successfully Edited User!")
+      getAllPeople();
     } catch(error){
       setOutput("Something went wrong");
     }
