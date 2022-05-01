@@ -16,11 +16,11 @@ const Header = () => {
     {user !== null ? 
       <React.Fragment>      
       <div className="header__container">
-        <Link to={"/home"}><img src="/logo.png" alt="school logo" className="header__container__image"/></Link>
+        <img src="/logo.png" alt="school logo" className="header__container__image"/>
         <span className="header__container__role">{user.role}</span>
       </div>
       <nav className="navigation">
-        <h2 className="navigation__heading">Home</h2>
+        <Link to={"/home"}><h2 className="navigation__heading">Home</h2></Link>
         <h2 className="navigation__heading">{user.fullName}</h2>
         <h2 onClick={handleLogout} className="navigation__heading">Logout</h2>
       </nav>

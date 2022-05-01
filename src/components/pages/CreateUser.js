@@ -51,7 +51,7 @@ const CreateUser = () => {
         <select required name="userType" className="create-card__input">
           <option>Choose User type</option>
           <option option="ROLE_STUDENT">ROLE_STUDENT</option>
-          {/* <option option="ROLE_ADMIN">ROLE_ADMIN</option> */}
+          <option option="ROLE_FACULTY">ROLE_FACULTY</option>
         </select>
 
         <div className="create-card__buttons">

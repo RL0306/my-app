@@ -9,7 +9,7 @@ const ManageStudent = () => {
   const navigation = useNavigate();
 
   const getAllPeople = async () => {
-    const req = await axios.get("http://localhost:8080/api/v1/admin/all", {withCredentials : true});
+    const req = await axios.get("http://localhost:8080/api/v1/admin/all/students", {withCredentials : true});
     const data = await req.data;
     setStudents(data);
   }
