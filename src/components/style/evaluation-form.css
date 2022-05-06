@@ -16,14 +16,17 @@
 .evaluation-form__form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   align-items: flex-start;
   padding: 1rem;
 }
 
 .evaluation-form__label {
+  display: block;
   font-size: 15px;
 }
+
+
 
 .evaluation-form__select {
   padding: 0.2rem 0.8rem;
@@ -35,4 +38,43 @@
   background-color: #001133;
   color: white;
   border: none;
+}
+
+.evaluation-form__card {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.evaluation-form__scores-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.evaluation-form__score {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: gray;
+  justify-content: space-evenly;
+}
+
+.evalutation-form__rating {
+  font-size: 15px;
+}
+
+.evalutation-form__number {
+  font-weight: bold;
+  color: rgba(139, 139, 139, 0.747);
+}
+
+.--hidden {
+  color: white;
+}
+
+.evaluation-form__inputs {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0.5rem;
+  width: 100%;
 }

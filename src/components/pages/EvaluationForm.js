@@ -43,17 +43,44 @@ const EvaluationForm = () => {
     <section className="evaluation-form">
       <h1 className="evaluation-form__heading">Evaulation Form</h1>
       <form onSubmit={(e) => handleSubmit(e)} className="evaluation-form__form">
+        <div className="evaluation-form__scores-info">
+          <div className="evaluation-form__score">
+            <p className="evalutation-form__rating">Strongly disagree</p>
+            <span className="evalutation-form__number">1</span>
+          </div>
+
+          <div className="evaluation-form__score">
+            <p className="evalutation-form__rating --hidden">hidden</p>
+            <span className="evalutation-form__number">2</span>
+          </div>
+
+          <div className="evaluation-form__score">
+            <p className="evalutation-form__rating">Neutral</p>
+            <span className="evalutation-form__number">3</span>
+          </div>
+
+          <div className="evaluation-form__score">
+            <p className="evalutation-form__rating --hidden">hidden</p>
+            <span className="evalutation-form__number">4</span>
+          </div>
+
+          <div className="evaluation-form__score">
+            <p className="evalutation-form__rating">Strongly Agree</p>
+            <span className="evalutation-form__number">5</span>
+          </div>
+        </div>
+
         {question.map((question) => 
-        <>
-        <label className="evaluation-form__label">{question.question}</label>
-        <select name={question.id} required key={question.id} className="evaluation-form__select">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-        </>
+          <div className="evaluation-form__card">
+            <label className="evaluation-form__label">{question.question}</label>
+            <div className="evaluation-form__inputs">
+              <input type="radio" name={question.id} value="1"/>
+              <input type="radio" name={question.id} value="2"/>
+              <input type="radio" name={question.id} value="3"/>
+              <input type="radio" name={question.id} value="4"/>
+              <input type="radio" name={question.id} value="5"/>
+            </div>
+          </div>
         )}
 
         <button className="evalutation-form__submit" type="submit">Submit</button>
